@@ -7,8 +7,8 @@
 
 import UIKit
 
-
-class IBStackView: UIStackView {
+@IBDesignable
+public class IBStackView: UIStackView {
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
