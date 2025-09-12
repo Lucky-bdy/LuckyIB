@@ -13,7 +13,12 @@ public class IBTextField: UITextField {
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
-            layer.masksToBounds = cornerRadius > 0
+        }
+    }
+    
+    @IBInspectable var masksToBounds: Bool = false {
+        didSet{
+            layer.masksToBounds = masksToBounds
         }
     }
     
